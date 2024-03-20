@@ -1,0 +1,39 @@
+.toast-messages{
+    height: 100%;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow: auto;
+}
+
+.toast-messages-block{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 20px;
+    background-color: inherit;
+}
+
+.toast-messages-block:hover{
+    background-color: var(--main-color-3);
+}
+
+
+.toast-messages-block-top{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.toast-messages-block-top img{
+    width: 20px;
+    height: 20px;
+}
+.toast-messages-block-name{
+    flex-grow: 1;
+}
+.toast-messages-block-body{
+    padding: 0 10px;
+    height: auto;
+    font-size: var(--font-size-6);
+}

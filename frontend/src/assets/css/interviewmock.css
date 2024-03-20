@@ -1,0 +1,113 @@
+.interviw-mock{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+.interviw-mock-left{
+    width: 50%;
+    min-width: 650px;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+
+    padding: 30px;
+}
+
+.interviw-mock-right{
+    width: 50%;
+    height: 100%;
+    min-width: 650px;
+    background-color: var(--main-color-2);
+
+
+}
+
+/* font */
+.interviw-mock-heading{
+    color: var(--text-color);
+    font-size: 32px;
+    line-height: 42px;
+}
+
+.interviw-mock-notes span{
+    display: block;
+    color: var(--text-color);
+    font-size: 20px;
+    line-height: 26px;
+    margin: 10px 0;
+}
+.interviw-mock-job{
+    color: var(--text-color);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.interviw-mock-company{
+    color: var(--text-color);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+}
+
+
+/* top */
+.interviw-mock-notes-block{
+    width: 100%;
+    height: 200px;
+    background-color:  var(--main-color-2);
+    border-radius: 24px;
+    padding: 16px;
+}
+
+.interviw-mock-notes-block p{
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+
+.interviw-mock-left-top{
+    margin-bottom: 30px;
+}
+
+.interviw-mock-left-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* position block */
+.interviw-mock-position img{
+    width: 54px;
+    height: 51px;
+    border-radius: 24px;
+}
+
+.interviw-mock-position{
+    width: 100%;
+    height: 82px;
+    background-color: var(--main-color-2);
+    border-radius: 24px;
+    display: flex;
+    flex-direction: row;
+    padding: 16px;
+    gap:20px;
+    margin: 20px 0 50px 0;
+}
+
+.interviw-mock-notes-block textarea{
+    width: 100%;
+    height: 100%;
+    background-color: inherit;
+    overflow: auto;
+    border: none;
+    outline: none;
+    color:var(--text-color);
+}

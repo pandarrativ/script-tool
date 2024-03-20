@@ -1,0 +1,88 @@
+.welcome {
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: row;
+
+    width: 100vw;
+    height: 100vh;
+    min-width: 1200px;
+    min-height: 800px;
+    padding: 50px;
+}
+
+
+/* left part */
+
+.left-welcome {
+    width: 50%;
+    height: 100%;
+    background-color: var(--main-color-2);
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.welcome-img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+
+
+/* right part */
+.right-welcome {
+    width: 50%;
+    height: 100%;
+
+    padding: 50px 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcome-logo{
+    width: 96px;
+    height: 96px;
+    border-radius: 24px;
+}
+
+.welcome-heading{
+    color: var(--text-color);
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 72px;
+    text-align: center;
+}
+
+.welcome-content{
+    color: var(--text-color);
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+}
+.welcome-button{
+    width: 162px;
+    height: 48px;
+    padding: 0px 8px;
+    border: 0;
+    box-sizing: border-box;
+    border-radius: 24px;
+    background-color: var(--main-color-2);
+    color: var(--text-color);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    outline: none;
+}
+
+.right-welcome-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 0 50px;
+}

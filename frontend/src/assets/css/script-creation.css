@@ -1,0 +1,461 @@
+.script-creation{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    height: 100vh;
+    /* min-height: 100vh; */
+    width: 100%;
+    background-color: var(--main-color-1);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.script-creation-toolbar{
+    height: 50px;
+    width: 100%;
+    background-color: var(--main-color-2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.script-creation-mainbody{
+    margin-top: 50px;
+    height: calc(100vh - 50px);
+    padding: 40px 0;
+}
+
+/************* top tool bar ***********/
+.script-creation-toolbar-item{
+    height: 50px;
+    padding: 0 20px;
+
+
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+
+
+.script-name{
+    background-color: inherit;
+    border: none;
+    outline: none;
+    width: 200px;
+    padding: 5px 10px;
+
+}
+
+
+.script-creation-toolbar-item>button{
+    background-color: inherit;
+    border: none;
+    z-index: 10000000;
+}
+
+.script-creation-toolbar-item>button:first-child,
+.script-name{
+    padding-right: 20px;
+    border-right: solid 2px var(--main-color-1);
+}
+
+
+.script-creation-toolbar-item>button::after {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #000;
+    border-radius: 4px;
+    border: none;
+    white-space: nowrap; 
+    visibility: hidden; 
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease; 
+}
+
+.script-creation-toolbar-item>button:hover::after {
+    visibility: visible;
+    opacity: 1;
+}
+/* 
+#top-toolbar-menu{
+    content: "Menu bar"; 
+}
+#toolbar-conversation{
+    content:"Conversation"
+}
+#toolbar-elements{
+    content:"Elements"
+}
+
+#toolbar-toasts{
+    content: "Tips"
+} */
+/************ left tool bar  *************/
+.script-creation-navbar{
+    top: 50px;
+    left: -150px;
+    height: calc(100vh - 50px);
+    width: 150px;
+    background-color: var(--main-color-2);
+    border-top: 1px solid var(--main-color-1);
+    padding-bottom: 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0 50px 0;
+
+    position: fixed;
+    transition: left 0.5s;
+    z-index: 10;
+}
+
+.navbar-showmenu-true{
+    left: 0;
+}
+
+.tool-bottom-btn,
+.tool-top-btn{
+    /* margin-left: 10px; */
+    width: 150px;
+    border: none;
+    background-color: inherit;
+    padding-left: 10px;
+
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+
+.tool-menu-top{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.tool-top-btn-activated-false span{
+    color: #999;
+}
+.tool-top-btn-activated-false:hover{
+    cursor: default;
+}
+
+/****************** right toolpanel  *********************/
+.script-creation-toolpanel{
+    position: fixed;
+    top: 50px;
+    right: 0;
+    height: calc(100vh - 50px);
+    background-color: var(--main-color-2);
+    opacity: 0;
+
+    transition: opacity 0.5s;
+
+    border-top: 1px solid var(--main-color-1);
+    z-index: 10000;
+}
+.toolpanel-toolbar-conversation{
+    opacity: 1;
+}
+.toolpanel-toolbar-elements{
+    opacity: 1;
+}
+
+.toolpanel-toolbar-toasts{
+    opacity: 1;
+}
+.toolpanel-toolbar-screenplay{
+    opacity: 1;
+}
+
+/****************** button containers ***************/
+.button-container{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    /* height: 70px; */
+    position: relative;
+}
+.script-creation-left .button-container{
+    justify-content: left;
+}
+.script-creation-right .button-container{
+    justify-content: right;
+    padding-right: 50px;
+}
+
+.script-creation-btn,
+.script-creation-select{
+    width: auto;
+    padding: 10px 20px;
+    border: none;
+    background-color: var(--main-color-0);
+    text-align: center;
+    text-decoration: none;
+    font-weight: var(--font-bold-weight);
+
+    cursor: pointer;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
+}
+.script-creation-select{
+    padding: 10px 5px ;
+}
+
+.script-creation-btn:last-child{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.script-creation-btn:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3); /* Larger shadow on hover */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*****************************  body  *****************************/
+.script-creation-body{
+    margin: 0 auto;
+    width: 1000px;
+    height: 100%;
+}
+
+.body-top{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 100%;
+}
+
+
+.script-creation-one,
+.script-creation-two,
+.script-creation-three,
+.script-creation-four{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+/*********************************************************************** 
+ For ScriptCreationOne.jsx
+************************************************************************/
+
+.script-creation-one .editor-container{
+    height: 285px;
+}
+.script-creation-one .flow-container{
+    height: 100%;
+    /* flex-grow: 1; */
+}
+
+/*********************************************************************** 
+ For ScriptCreationTwo.jsx
+************************************************************************/
+.script-creation-two{
+    flex: 1;
+    /* flex-grow: 1; */
+}
+
+.script-creation-two .body-top{
+    height: calc(100% - 70px);
+}
+.script-creation-two .button-container{
+    height: 70px;
+}
+/*********************************************************************** 
+ For ScriptCreationThree.jsx
+************************************************************************/
+
+
+
+/*********************************************************************** 
+ For ScriptCreationFour.jsx
+************************************************************************/
+.script-creation-four .body-top{
+    height: calc(100% - 70px);
+}
+.script-creation-four .button-container{
+    height: 70px;
+}
+
+/*********************************************************************** 
+ For ScriptCreationFive.jsx
+************************************************************************/
+.script-creation-five{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+}
+
+.script-creation-five-body{
+    width: 100%;
+    height: 100%;
+}
+
+
+.script-creation-five-body .flow-container{
+    border: none;
+}
+
+#scene-flow-panel{
+    top:50px;
+}
+#scene-flow-panel button{
+    width: auto;
+    padding: 10px 20px;
+    border: none;
+    background-color: var(--main-color-0);
+    text-align: center;
+    text-decoration: none;
+    font-weight: var(--font-bold-weight);
+
+    cursor: pointer;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
+}
+
+
+/*********************************************************************** 
+ For ScriptCreationDisplay.jsx
+************************************************************************/
+.script-creation-mainbody .script-creation-ScreenPlay{
+    width: 100%;
+    margin: 0;
+}
+
+.script-display{
+    width: 100%;
+    height: calc(100% - 50px);
+}
+
+.script-creation-ScreenPlay .button-container{
+    height: 50px;
+    margin: 0 100px;
+    padding-top: 20px;
+}
+.script-creation-ScreenPlay .button-container .script-creation-btn{
+
+    top: 20px;
+}
+
+.script-creation-ScreenPlay .body-top{
+    width: 100%;
+    height: 100%;
+    padding: 0 100px;
+}
+
+.script-display-pages{
+    padding-bottom: 20px;
+    overflow-x: auto;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.script-display .script-display-container{
+    width: 500px;
+    min-width: 500px;
+}
+
+/* slectino */
+.scene-type-selectin{
+    margin: 0 auto;
+    width: 1000px;
+    height: 100%;
+    padding: 90px;
+}
+.scene-type-selectin-title{
+    font-size: var(--font-size-2);
+    line-height: var(--h2-line-height);
+}
+.scene-type-selectin-body{
+    width: 1000px;
+    padding: 40px 0;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    
+}
+
+
+.selection-img{
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+}
+
+.selection-card{
+    border: 1px #aaa solid;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+    padding: 20px;
+    width: 300px;
+    height: 450px;
+    background-color: var(--main-color-0);
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    gap: 10px;
+}
+
+.selection-card:hover{
+    box-shadow: 0 10px 15px rgba(0,0,0,0.5);
+}
+.selection-typename{
+    font-size: var(--font-size-5);
+}
+
+.selection-content{
+
+    flex-grow: 1;
+    text-align: center;
+}
+
+
+.type-selection-btn{
+    width: auto;
+    border: var(--border-color-1) 2px solid;
+    background-color: inherit;
+    padding-left: 10px;
+
+    padding: 5px 20px;
+    border-radius: 20px;
+}
+
+
+
+.type-selection-btn:hover{
+    background-color: var(--main-color-2);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
+}
+
+
+
+
+

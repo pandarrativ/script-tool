@@ -1,0 +1,142 @@
+.Toastify__toast-container{
+    bottom: 70px !important;
+}
+
+
+/* .chat-widget{ */
+.react-draggable{
+    position: absolute;
+    right: 20px;
+    bottom: 30px;
+    z-index: 10010;
+}
+
+.widget:hover,
+.widget:focus{
+    cursor: pointer;
+}
+
+.widget-chat{
+    position: absolute;
+    bottom: 70px;
+    right: 10px;
+    background-color: var(--bg-color);
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+    border-radius: 12px;
+    border: none;
+
+
+    height: auto;
+
+    width: 150px;
+
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.widget-chat-false{
+    display: none;
+}
+
+
+
+.widget-block{
+    display: flex;
+    flex-direction: column;
+}
+.widget-block button{
+    width: 150px;
+    height: 40px;
+    border: solid var(--main-color-1) 1px;
+    background-color: var(--main-color-2);
+    border-radius: 5px;
+}
+.widget-block button:hover{
+    background-color: var(--main-color-3);
+}
+
+/* chat header */
+.widget-chat-header{
+    background-color: var(--main-color-3);
+    border-radius: 12px 12px 0 0;
+    height: 40px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 0 10px;
+}
+
+.widget-chat-heading{
+    /* color: var(--text-color); */
+    /* font-size: var(--content-size); */
+    font-weight: var(--font-bold-weight);
+}
+
+.widget-close-btn{
+    background-color: inherit;
+    border: none;
+}
+/* chat body */
+.widget-chat-body{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    overflow: auto;
+    align-items: center;
+}
+
+
+.widget-chat-top{
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.widget-chat-agentname{
+    font-size: var(--h3-size);
+    font-weight: var(--font-bold-weight);
+}
+.widget-chat-message{
+    color: #999;
+}
+
+
+
+
+
+
+/* imgs */
+.widget-img-box{
+    height: 50px;
+    width: 50px;
+}
+.widget-img-box img{
+    border-radius: 10000px;
+}
+
+.widget-chat-icon-box{
+    height: 35px;
+    width: 35px;
+}
+.widget-chat-icon-box img{
+    border-radius: 10000px;
+}
+
+
+.widget-close-btn>img{
+    height: 25px;
+    width: 25px;
+}
+
+.widget-profile{
+    height: 25px;
+    width: 25px;
+}
+.widget-profile img{
+    border-radius: 10000px;
+}

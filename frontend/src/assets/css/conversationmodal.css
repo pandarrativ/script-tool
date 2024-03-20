@@ -1,0 +1,88 @@
+.conversation-modal {
+    position: fixed; /* Stay in place */
+    z-index: 10; /* Sit on top */
+    left: 50vw;
+    top: 50vh;
+    transform:translate(-50%, -50%);
+    width: 1000px; /* Full width */
+    height: 700px; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: var(--main-color-1);
+    border-radius: 12px;
+    padding: 20px;
+
+
+    display: flex;
+    flex-direction: column;
+  }
+
+.modal-bg{
+    display: none;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 5;
+}
+
+  .modal-hovering-true{
+    display: block;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+
+.conversation-title{
+    width: 100%;
+    padding: var(--font-size-5) 0;
+    color: var(--border-color-1);
+    font-size: var(--font-size-3);
+    font-weight: 600;
+    border-bottom: var(--border-color-1) 3px solid;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.modal-close{
+    border: none;
+    background-color: inherit;
+}
+
+.modal-close img{
+    width: 20px;
+    height: 20px;
+}
+
+
+.conversation-characters{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 20px;
+
+    border-bottom: var(--border-color-1) 2px solid;
+}
+
+.conversation-character{
+    padding: 20px;
+    background-color: var(--main-color-0);
+    width: 50px;
+    height: 50px;
+    border-radius: 10000px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.conversation-character-me{
+    min-width: 55px;
+    height: 55px;
+    font-weight: 800;
+}
+
+.modal-messages{
+    flex-grow: 1;
+}

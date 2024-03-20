@@ -1,0 +1,183 @@
+.search-page{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding: 0px 5px;
+    display: flex;
+    flex-direction: row;
+    gap:30px;
+    height: 100%;
+}
+
+.search-page-left{
+    width: 400px;
+}
+
+
+/***************  search form  ********************/
+.search-page-search{
+    width: 337px;
+    height: 444px;
+    background-color: var(--grey-color-dark);
+    padding:30px 35px;
+}
+
+#job-search-form{
+    display: flex;
+    flex-direction: column;
+    gap:20px; 
+}
+
+.job-page-return-btn{
+    border: none;
+    background-color: transparent;
+    margin-bottom: 20px;
+}
+
+#job-search-form .form-input label{
+    color: var(--text-color);
+    font-size: 14px;
+    line-height: 22px;
+
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#job-search-form input{
+    width: 247px;
+    height: 42px;
+    padding: 0px 8px;
+    border: 0;
+    box-sizing: border-box;
+    border-radius: 24px;
+    background-color: var(--main-color-1);
+    color: var(--text-color);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    outline: none;
+}
+
+
+
+#job-search-form-heading{
+    color: var(--text-color);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+
+
+.job-search-btn{
+    width: 247px;
+    height: 42px;
+    padding: 0px 8px;
+    border: 0;
+    box-sizing: border-box;
+    border-radius: 24px;
+    background-color: var(--dec-color);
+    color: #000;
+    font-size: 14px;
+    line-height: 18px;
+    outline: none;
+}
+
+
+
+/*************************** filters  *************************** */
+.search-page-filter{
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+    padding: 20px 90px ; 
+}
+
+.filter-group{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+}
+
+.filer-label{
+    color: var(--text-color);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.filter-group .form-input{
+    width: 300px;
+}
+
+
+.filter-group label{
+    color: var(--text-color);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+
+    width: 150px;
+    display: block;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+/******************* right page  *******************/
+.search-page-right{
+    min-width: 900px;
+    display: flex;
+    flex-direction: column;
+    width: calc(100vw - 650px);
+    padding: 30px 0;
+}
+
+.search-page-right-results{
+    color: var(--text-color);
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.search-page-right-heading{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.search-page-right-criterials{
+    color: var(--text-color);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+}
+
+.search-page-right-sort{
+    width: 128px;
+    height: 36px;
+    padding: 0px 8px;
+    border: 0;
+    box-sizing: border-box;
+    border-radius: 24px;
+    background-color: var(--grey-color-dark);
+    color: var(--text-color);
+    font-size: 14px;
+    line-height: 22px;
+    outline: none;
+}
+
+.search-page-right-content{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    margin: 30px 0;
+}
+
+.search-page-right-botom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

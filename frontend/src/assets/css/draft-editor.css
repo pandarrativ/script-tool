@@ -1,0 +1,208 @@
+/* default font */
+#editor-container span{
+  font-family: 'Georgia', serif;
+  font-size: 1rem;
+}
+
+/* ********************************  set your font size and family here*************************************** */
+  /* font family */  
+  #editor-container .fontFamilySerif span{
+    font-family:  'Georgia', serif !important;
+  }
+  
+  #editor-container  .fontFamilySansSerif span{
+    font-family:  'Arial', sans-serif !important;
+  }
+
+  #editor-container  .fontFamilyCourier span{
+    font-family:  'Courier', 'Courier New', monospace !important;
+  }
+
+  #editor-container  .fontFamilyLucida-console span{
+    font-family:  'Lucida Console', monospace !important;
+  }
+
+  #editor-container  .fontFamilyConsolas span{
+    font-family:  'Consolas', monospace !important;
+  }
+
+  #editor-container .fontFamilyTimes span{ 
+    font-family: 'Times New Roman', serif !important; 
+}
+
+  /* font size */
+  #editor-container .fontSizeH1 span{
+    font-size: 2rem !important;
+  }
+  
+  #editor-container .fontSizeH2 span{
+    font-size: 1.5rem !important;
+  }
+
+  #editor-container .fontSizeH3 span{
+    font-size: 1.17rem !important;
+  }
+
+  #editor-container .fontSizeNormal span{
+    font-size: 1rem !important;
+  }
+
+  #editor-container .fontSizeSmall span{
+    font-size: 0.75rem !important;
+  }
+
+/******************************* general settings for the editor container ************************/
+.editor-container{
+    width: 100%;
+    height: 100%;
+    /* border: var(--border-color-1) 3px solid; */
+    border-radius: 2px;
+    padding: 50px 10px 20px 10px;
+    background-color: #fff;
+    box-shadow: 1px 2px 5px rgba(0,0,0,0.3);
+    overflow: auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+
+/* ************************************************************************************************************* */
+/* toolbars css */
+.toolbar{
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    /* padding: 0 20px; */
+    gap: 20px;
+    justify-content: left;
+}
+
+.toolbar button {
+    padding: 5px 5px;
+    background-color: #fff;
+    border: none;
+    /* border: 1px solid #ddd;
+    border-radius: 2px; */
+    cursor: pointer;
+  }
+
+  .is-cursor-style-true{
+    background-color: #ddd !important;
+  }
+
+  .toolbar-btn-type1>img{
+    width: 15px;
+    height: 15px;
+  }
+  
+  .toolbar button:hover {
+    background-color: #ddd;
+  }
+  
+
+/* style settings */
+.editor-block{
+    overflow: auto;
+    flex: 1;
+    /* height: 100%; */
+}
+
+.editor-block .DraftEditor-root {
+    max-height: 100%;
+}
+  
+  .editor-block .DraftEditor-editorContainer,
+  .editor-block .public-DraftEditor-content {
+    height: 100%;
+    overflow: auto; 
+  }
+
+
+
+
+
+.DraftEditor-root {
+    height: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+.DraftEditor-root:focus {
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;
+}
+
+.public-DraftEditorPlaceholder-root {
+    color: #aaa;
+    font-style: italic;
+}
+.DraftEditor-blockquote {
+    border-left: 5px solid #eee;
+    color: #666;
+    font-style: italic;
+    margin: 16px 0;
+    padding-left: 10px;
+}
+
+.public-DraftStyleDefault-pre {
+    background-color: #f7f7f7;
+    font-family: 'Inconsolata', 'Menlo', 'Consolas', monospace;
+    padding: 20px;
+}
+.DraftEditor-editorContainer strong {
+    font-weight: bold;
+}
+
+.DraftEditor-editorContainer em {
+    font-style: italic;
+}
+
+.DraftEditor-editorContainer u {
+    text-decoration: underline;
+}
+.public-DraftStyleDefault-orderedListItem,
+.public-DraftStyleDefault-unorderedListItem {
+    margin-left: 16px;
+}
+.DraftEditor-editorContainer a {
+    color: #3b5998;
+    text-decoration: none;
+}
+
+.DraftEditor-editorContainer a:hover {
+    text-decoration: underline;
+}
+.highlight {
+    background-color: yellow;
+}
+
+.redText {
+    color: red;
+}
+
+
+
+
+/******************* text align ***************/
+.toolbar-btn-select {
+    border: 1px solid #cccccc; /* Light grey border */
+    border-radius: 2px;
+    background-color: #fff;
+  }
+  
+  .textAlignLeft {
+    text-align: left;
+  }
+  
+  .textAlignCenter {
+    text-align: center;
+  }
+  
+  .textAlignRight {
+    text-align: right;
+  }
+  
+

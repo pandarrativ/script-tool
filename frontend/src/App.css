@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+
+/* color setting */
+:root {
+  --bg-color: #fff; /* Light mode background color */
+  --text-color: #000; /* Light mode text color */
+  --main-color-0: #e7f5ff;
+  --main-color-1: #e5f4ff;
+  --main-color-2: #74c0fc;  
+  --main-color-3: #339af0;
+
+  --border-color-1:#1864ab;
+  --dec-color: #999;
+
+
+  --font-size-1:3rem;
+  --font-size-2:2.5rem;
+  --font-size-3:1.75rem;
+  --font-size-4:1.5rem;
+  --font-size-5:1.25rem;
+  --font-size-6:1rem;
+  --font-size-7:0.8rem;
+
+
+
+    /* for scroll bar */
+    --scroll-bar-bg: #efefd2;
+    --scroll-bar-thumb: #eee;
+    --scroll-bar-shadow: rgba(255,255,255,0.3);
+
+
+    /* font size */
+    --h1-size: 3.5rem;
+    --h2-size: 2.75rem;
+    --h3-size:1.5rem;
+    --content-size:1.25rem;
+    --content-size-small: 1.1rem;
+    --notes-size: 1rem;
+    
+    --h1-line-height: 4rem;
+    --h2-line-height: 2.5rem;
+    --h3-line-height:2rem;
+    --mid-line-height:1.5rem;
+    --content-line-height:1.25rem;
+    --notes-line-height: 1rem;
+    
+    --font-bold-weight:600;
+    
+    --font-family-body: "open sans condense";
+    --font-family-title: "pattaya";
+}
+
+.dark {
+  --bg-color: #fff; /* Light mode background color */
+  --text-color: #000; /* Light mode text color */
+  --main-color-0: #fefbf0;
+  --main-color-1: #faebcb;
+  --main-color-2: #F9DF6D;  
+  --main-color-3: #fac304;
+
+  --border-color-1:#bf8b70;
+  --dec-color: #999;
+
+
+  --font-size-1:3rem;
+  --font-size-2:2.5rem;
+  --font-size-3:1.75rem;
+  --font-size-4:1.5rem;
+  --font-size-5:1.25rem;
+  --font-size-6:1rem;
+  --font-size-7:0.8rem;
+
+
+
+    /* for scroll bar */
+    --scroll-bar-bg: #efefd2;
+    --scroll-bar-thumb: #eee;
+    --scroll-bar-shadow: rgba(255,255,255,0.3);
+
+
+    /* font size */
+    --h1-size: 3.5rem;
+    --h2-size: 2.75rem;
+    --h3-size:1.5rem;
+    --content-size:1.25rem;
+    --content-size-small: 1.1rem;
+    --notes-size: 1rem;
+    
+    --h1-line-height: 4rem;
+    --h2-line-height: 2.5rem;
+    --h3-line-height:2rem;
+    --mid-line-height:1.5rem;
+    --content-line-height:1.25rem;
+    --notes-line-height: 1rem;
+    
+    --font-bold-weight:600;
+    
+    --font-family-body: "open sans condense";
+    --font-family-title: "pattaya";
+}
+
+
+*{
+  margin: 0;
+  pad: 0;
+  box-sizing: border-box;
+  color: var(--text-color);
+  font-size: var(--content-size-small);
+  line-height: var(--content-line-height);
+  font-family: var(--font-family-body);
+}
+
+input::placeholder {
+  color: var(--text-color); /* Change the color to your desired color code */
+}
+
+/* For textarea elements */
+textarea::placeholder {
+  color: var(--text-color);  /* Change the color to your desired color code */
+}
+
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.main{
+  height: 100%;
+  width: 100%;
+}
+
+textarea{
+  resize: none;
+}
+
+
+button{
+  cursor: pointer;
+}
+
+
+/* to make img in center no matter the box size */
+.img-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.box-img{
+  min-width: 100%;
+  min-height: 100%;
+  display: block; 
+  object-fit: cover;
+}
+
+
+
+@font-face {
+  font-family: "open sans condense";
+  src: url('./assets/fonts/osanscondensed/OpenSans_Condensed-Medium.ttf');
+}
+@font-face {
+  font-family: "pattaya";
+  src: url("./assets/fonts/Pattaya/Pattaya-Regular.ttf");
+}
+
+
+/* loading icon */
+.loading-container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 12;
+}
+
+.loading{
+  /* add animation */
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+from {
+      transform: rotate(0deg);
+  }
+  to 
+  {
+      transform: rotate(360deg);
+  }
+}
+
+.loading-background{
+  background-color: var(--main-color-1);
+  opacity: 0.3;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top:0;
+  left: 0;
+  z-index: 100000000;
+}
+
+.isloading-false{
+  display: none;
+}
+
+
+
+/* *::-webkit-scrollbar {
+  width: 7px;
+  background-color: #eee;
+  border-radius: 20px;
+}
+
+*::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px var(--scroll-bar-shadow);
+  background-color: var(--scroll-bar-bg);
+  border-radius: 20px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--scroll-bar-thumb);
+  border-radius: 20px;
+} */
+
+*::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #fff; 
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: var(--border-color-1);
+  border: 4px solid transparent; 
+  background-clip: content-box; 
+}
+
+*::-webkit-scrollbar {
+  width: 12px; 
+  height: 12px;
+}

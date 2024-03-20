@@ -1,0 +1,343 @@
+/********************** custom elements  ******************************/
+.react-flow__node-custom {
+    font-size: 10px;
+    width: 110px;
+    background: #f5f5f6;
+    color: #222;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 15%), 0 2px 4px -1px rgb(0 0 0 / 8%);
+    border-radius: 2px;
+    padding: 5px;
+  }
+
+
+  /************************* logline node *****************************/
+  .togline-node-title{
+    text-align: center;
+  }
+  .togline-node textarea{
+    width: 100px;
+    height: 100px;
+  }
+  
+  
+
+/************************* scenes flow  *****************************/
+/* custome scene edge */
+
+.scene-edge-btn{
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: none;
+
+}
+.scene-edge-btn img{
+    width: 20px;
+    height: 20px;
+}
+
+#scenes-flow {
+    width: 100%;
+    height: 100vh; /* Adjust the height as needed */
+    background-color: #f0f0f0; /* Your desired background color */
+  }
+/* head node */
+.react-flow__node-HeadNode{
+    width: 70px;
+    height: 30px;   
+    background-color: #aaa;
+    border-radius: 5px;   
+    text-align: center; 
+    padding: 3px;
+}
+
+.react-flow__node-HeadNode span{
+    display: block;
+}
+
+
+/* scene node 1*/
+.react-flow__node-SceneNode1{
+    /* width: 200px; */
+    border-radius: 20px 20px 0 0 ;
+}
+
+/* differenct levels */
+/* l1 */
+.scene-node-l1-body{
+    width: 300px;
+    height: 300px;
+    border-radius: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scene-node-l1-body input{
+    font-size: 5rem;
+    border: none;
+    width: 200px;
+    height: 200;
+    padding: 25px;
+    /* background-color: inherit; */
+    text-align: center;
+    outline: none;  
+
+
+    background-color: #212529;
+    color: #fff;
+    border-radius: 50px;
+}
+
+/* l2 */
+.scene-node-l2-body{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 330px;
+    height: 150px;
+    border-radius: 50px;
+    padding: 0 20px;
+
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+
+    /* justify-content: space-between; */
+}
+.scene-node-l2-order{
+    
+    width: 100px;
+    height: 80px;
+    border: none;
+    font-size: 2.5rem;
+    display: block;
+    margin-left: -70px;
+
+    background-color: #212529;
+    color: #fff;
+    border-radius: 20px;
+
+    text-align: center;
+}
+.scene-node-l2-title{
+    width: 230px;
+    height: 150px;
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    display: block;
+}
+
+/* l3 */
+.scene-node-l3-body{
+    width: 300px;
+    height: 250px;
+}
+
+.scene-node1-l3-top{
+    height: 80px;
+    width: 300px;
+
+    display: flex;
+    flex: row;
+    align-items: center;
+    border-radius: 30px 30px 0 0;
+}
+
+.scene-node-l3-order{
+    width: 60px;
+    height: 60px;
+    background-color: #212529;
+    color: #fff;
+    border-radius: 60px;
+    text-align: center;
+    outline:none;
+    border: none;
+    margin-left: -30px;
+    font-size: 1.25rem;
+}
+
+.scene-node-l3-title{
+    margin-left: 10px;
+    width: 180px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+
+    font-size: 1.25rem;
+}
+
+.scene-node1-l3-bottom{
+    border-radius: 12px 12px 8px 8px ;
+    background-color: #fff;
+    margin-top: -10px;
+    padding: 20px 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.scene-node1-l3-bottom textarea{
+    width: 280px;
+    height: 150px;
+}
+
+/* l4 */
+.scene-node1-l4{
+    width: 500px;
+    /* height: 600px; */
+}
+
+.scene-node1-top{
+    background-color: var(--main-color-3);
+    padding: 20px 10px 15px 10px;
+    border-radius: 12px 12px 0 0 ;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.scene-node-l4-order{
+    width: 50px;
+    height: 50px;
+    background-color: #212529;
+    color: #fff;
+    border-radius: 60px;
+    border: none;
+    outline: none;
+    margin-left: -30px;
+    margin-top: -30px;
+
+
+    text-align: center;
+    font-size: 1rem;
+
+}
+.scene-node-l4-title{
+    width: 350px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size:1rem;
+}
+
+.scene-node1-input,
+.scene-node1-textarea{
+    width: 450px;
+    border: solid 1px #ddd;
+    border-radius: 8px;
+    outline: none;
+    padding: 5px 10px;
+}
+.scene-node1-textarea{
+    width: 450px;
+    height: 200px;
+    padding: 10px;
+}
+
+
+.scene-node1-input:focus,
+.scene-node1-textarea:focus{
+    border: solid 2px #aaa;
+}
+
+
+.scene-node1-close-btn{
+    border: none;
+    background-color: transparent;
+}
+.scene-node1-close-btn img{
+    width: 20px;
+    height: 20px;
+}
+
+.scene-node1-body{
+    width: 500px;
+    border-radius: 12px 12px 8px 8px ;
+    background-color: #fff;
+    margin-top: -10px;
+    padding: 20px 25px 25px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+.scene-node1-body span{
+    font-size: var(--font-size-6);
+
+}
+
+.scene-node1-body-section{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.scene-node1-btns{
+    border-radius: 20px;
+    background-color: var(--main-color-2);
+    border: none;
+    padding: 5px 10px;
+    font-size: var(--font-size-7);
+}
+
+
+
+/* notes */
+.scene-note1{
+    width: 200px;
+    height: auto;
+    border-radius: 12px 12px 8px 8px ;
+    background-color: #ffffff80;
+    padding: 30px 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+
+    position: relative;
+}
+
+.scene-note1>textarea{
+    height: auto;
+    resize: auto;
+    font-size: var(--font-size-7);
+    outline: none;
+}
+
+.scene-note1-close-btn{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+
+/* color picker */
+.scene-node1-color-picker{
+    position: relative;
+}
+
+.scene-node1-color-picker-btns{
+    position: absolute;
+    bottom: 60px;
+    right: -5px;
+
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.color-picker-btn{
+    border: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 1000px;
+}
+.color-picker-btn:hover{
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+

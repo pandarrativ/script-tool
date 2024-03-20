@@ -1,0 +1,105 @@
+.jobcard{
+    min-width: 900px;
+    height: 232px;
+    background-color: var(--main-color-2);
+    border-radius: 24px;
+    padding: 16px;
+
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    column-gap: 16px;
+}
+
+.card-img{
+    width: 200px;
+    height: 200px;
+    border-radius: 24px;
+}
+
+.card-save-btn{
+    border: none;
+    background-color: transparent;
+}
+
+.card-experience-btn{
+    width: 206px;
+    height: 34px;
+    padding: 0px 8px;
+    margin-top: 10px;;
+    border: 0;
+    box-sizing: border-box;
+    border-radius: 24px;
+    background-color: var(--dec-color);
+    color: #000000;
+    font-size: 14px;
+    line-height: 18px;
+    outline: none;
+}
+
+
+/* text style */
+.job-title{
+    color: var(--text-color);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    padding-left: 20px;
+}
+
+.job-company{
+    color: var(--text-color);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    padding-left: 20px;
+}
+
+.card-right-info-1{
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    padding-left: 20px;
+}
+
+.job-info-list,
+.card-right-bottom-2,
+.card-right-info-2{
+    color:  var(--text-color);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding-left: 20px;
+}
+
+
+/* grid */
+.card-mid{
+    display: grid;
+    grid-template-rows: auto 1fr auto auto;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.job-info-list{
+    display: flex;
+    flex-direction: column;
+    gap:13px;
+}
+
+
+.card-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:flex-end;
+
+    text-align: right;
+}
+
+.card-right-top{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+   
+}

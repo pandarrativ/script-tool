@@ -1,0 +1,29 @@
+# Node modules
+node_modules/
+
+# React build artifacts
+/build
+
+# Django
+*.pyc
+**/__pycache__/
+__pycache__/
+db.sqlite3
+media
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+backend/users/migrations/__pycache__/0001_initial.cpython-39.pyc
+backend/users/migrations/__pycache__/__init__.cpython-39.pyc
+backend/users/migrations/__pycache__/0001_initial.cpython-39.pyc
+*.pyc

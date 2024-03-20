@@ -1,0 +1,327 @@
+.conversation{
+    /* margin: 20px auto; */
+    width: 450px;    
+    height: 100%;
+    /* make sure the messages lies within */
+    overflow: hidden; 
+    /* border: var(--border-color-1) 3px solid; */
+    /* border-radius: 8px; */
+    padding: 20px 10px 40px 10px;
+    /* background-color: #fff; */
+    /* box-shadow: 1px 2px 5px rgba(0,0,0,0.3); */
+
+
+    /* display: grid;
+    grid-template-rows: auto 1fr auto; */
+    display: flex;
+    flex-direction: column;
+    position:relative;
+}
+
+/* conversation header */
+.conversation-header{
+    padding: 0 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap:20px;
+
+    flex-shrink:0;
+
+    margin-bottom: 10px;
+}
+
+.conversation-heading{
+    width: 100%;
+    padding: var(--font-size-5) 0;
+    color: var(--border-color-1);
+    font-size: var(--font-size-3);
+    font-weight: 600;
+    border-bottom: var(--border-color-1) 3px solid;;
+}
+
+.conversation-options{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.conversation-options button{
+    width: 30%;
+    border-radius: 20px;
+    padding: 5px 15px;
+    border: var(--border-color-1) 2px solid;
+    background-color: var(--bg-color);
+}
+
+
+
+/* conversation input */
+.chat-container{
+    margin-top: 40px;
+    width: 100%;
+    padding: 0 20px;
+
+    flex-shrink:0;
+}
+
+.conversation-input{
+    /* height: 60px; */
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 24px;
+    border: var(--border-color-1) 3px solid;
+
+    color: var(--border-color-1);
+    outline: none;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.conversation-input-content, 
+.chat-input-content{
+    background-color: transparent;
+    height: 40px;
+    width: 90%;
+    border: none;
+    color: var(--text-color);
+}
+
+.conversation-input-content:hover,
+.conversation-input-content:focus,
+.chat-input-content:hover,
+.chat-input-content:focus
+{
+    outline: none; /* Removes the default focus outline (not recommended for accessibility) */
+    box-shadow: none;
+}
+
+
+/* for messages */
+.message-bot{
+    height: 40px;
+    width: 40px;
+
+}
+
+
+.chat-message-input{
+    background-color: transparent;
+    border: none;
+}
+
+.chat-message-input img{
+    width: 36px;
+}
+
+/* messgae */
+.messages{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    overflow-y: auto;
+    margin-right: 10px;
+
+
+    flex-grow:1;
+    margin-top: 20px;
+}
+
+
+
+.message{
+    padding: 0 20px;
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    gap:10px;
+}
+.message img{
+    margin-top: 10px;
+}
+
+
+
+.message-me-true{
+    justify-content: right;
+}
+
+.message-me-false{
+    justify-content: left;
+}
+
+.message-me-true .message-body{
+    order:  1;
+}
+
+.message-me-true .message-thumbsup{
+    order: - 1;
+}
+
+.message-thumbsup:hover{
+    cursor: pointer;
+}
+
+/* for message */
+.message-body{
+    max-width: 300px;
+    height: auto;
+    background-color: var(--main-color-0);
+    border: var(--border-color-1) 2px solid;
+    border-radius: 24px;
+    padding: 15px 30px;
+    gap:10px;
+
+
+}
+
+.message-content{
+    grid-area: content;
+    color: var(--text-color);
+    font-size: 14px;
+    line-height: 22px;
+    overflow-wrap: break-word;
+    text-align: justify;
+}
+
+
+.message-me-true .message-content{
+    text-align: right;
+}
+
+.message-time{
+    grid-area: time;
+    color: var(--text-color);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 12px;
+    text-align: right;
+}
+
+
+/* chat */
+.chat{
+    width: 80%;
+    height: 364px;
+    background-color: var(--main-color-2);
+    border-radius: 24px;
+
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.chat-body{
+    width: 100%;
+    height: 320px;
+    overflow:auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* for message avatar */
+
+.message-avatar-profile img{
+    width: 50px;
+    height: 50px;
+    border-radius: 24px;
+}
+
+.message-avatar-username{
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+}
+.message-avatar-content{
+    color: var(--text-color);
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.chat .conversation-input,
+.chat .conversation-input-content{
+    height: 60px;
+}
+
+
+.message-avatar-me-true .message-avatar-profile{
+    order: 1;
+}
+
+.message-avatar-me-true .message-avatar-body{
+    order: -1;
+    text-align: right;
+}
+.message-avatar-content{
+    margin-top: 5px;
+}
+
+
+
+
+/* prompt questions */
+.prompt-question-list{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    gap: 5px;
+    width: 80%;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    background-color: #fff;
+
+
+    position: absolute;
+    bottom: 70px;
+
+    height: 40px;
+    transition: height 1s, transform 1s;
+}
+.prompt-question-list:hover{
+    height: auto;
+}
+
+.prompt-question{
+    border: var(--main-color-2) 2px solid;
+    border-radius: 10px;
+    padding: 5px 10px;
+
+    opacity: 0; 
+    transform: translateX(-20px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.prompt-question-list > .prompt-question:first-child{
+    opacity: 1;
+    transform: translateX(0);
+}
+.prompt-question-list:hover > .prompt-question{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+.prompt-question:hover{
+    cursor: pointer;
+    background-color: var(--main-color-1);
+}
+
+
+/* screen play */
+
+
+.scene-script{
+    width: 700px;
+    background-color: inherit;
+    padding: 40px 20px;
+    height: calc(100% - 70px);
+}

@@ -1,0 +1,545 @@
+/* selectors */
+.selection-form-selectors{
+    display: flex;
+    flex-direction: row;
+    gap:30px;
+}
+
+.selection-form-selectors select{
+    width: 309px;
+    height: 60px;
+    padding: 10px;
+    background-color: var(--main-color-2);
+    border-radius: 24px;
+    border: none;
+
+    font-size: 20px;
+    line-height: 26px;
+    color: var(--text-color);;
+
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+/**************************** input style ***************************/
+.form-input input[type=text],
+.form-input input[type=email]{
+    width: 300px;
+    height: 58px;
+    background-color: var(--main-color-1);
+    border-radius: 24px;
+    border: none;
+    padding: 10px;
+    color:var(--text-color);
+
+}
+
+.form-date-input{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+.form-date-input select{
+    width: 140px;
+    height: 58px;
+    padding: 10px;
+    background-color: var(--main-color-1);
+    border-radius: 24px;
+    border: none;
+
+    font-size: 16px;
+    line-height: 26px;
+    /* color: #fff; */
+    color:var(--text-color);
+}
+
+.textarea-wrapper{
+    padding: 10px 0 30px 0;
+    background-color: var(--main-color-1);
+    border-radius: 10px;
+}
+
+.form-input textarea{
+    width: 647x;
+    height: 185px;
+    background-color: var(--main-color-1);
+    padding: 0 20px;
+    /* margin: 10px 0 20px 0; */
+
+    outline: none;
+    color:var(--text-color);
+    box-sizing: border-box;
+    border: none;
+}
+
+.form-input input[type=checkbox]{
+    width: 20;
+    height: 20px;
+}
+
+
+#skills-select{
+    width: 450px;
+    height: 58px;
+    background-color: var(--main-color-1);
+    border-radius: 24px;
+    border: none;
+}
+
+.input-user-currentedu label,
+.input-user-currentwork label{
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    padding: 0 20px;
+    justify-content: space-between;
+}
+
+
+/************************** btn style **************************************/
+.form-add-btn,
+.form-remove-btn,
+.skills-add-btn,
+.user-selection-form-submit
+{
+    width: 320px;
+    height: 46px;
+    padding: 0px 8px;
+    border: 0;
+    box-sizing: border-box;
+    border-radius: 24px;
+    background-color: var(--dec-color);
+    color: var(--text-color);
+    font-size: 20px;
+    font-family: "Source Sans Pro";
+    line-height: 26px;
+    outline: none;
+}
+
+.form-add-btn{
+    margin-right: 50px;
+}
+
+.user-selection-form-submit{
+    width: 647px;   
+}
+
+.use-ai-btn{
+    width: 80px;
+    height: 25px;
+    padding: 0px 8px;
+    border: 0;
+    box-sizing: border-box;
+    border-radius: 24px;
+    background-color: var(--dec-color);
+    color: #000;
+    font-size: 15px;
+    font-family: "Source Sans Pro";
+    line-height: 20px;
+    outline: none;
+}
+
+
+/********************************************************************************************/
+/***************************  Grid css for user select form**********************************/
+/********************************************************************************************/
+.selection-form{
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 691px;
+}
+
+
+/****************  basic info *****************/
+.form-basic-info{
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+        "name name name name"
+        "city city state zipcode"
+        "phone phone email email" 
+    ;
+    gap: 20px 10px;
+}
+.input-user-name{
+    grid-area: name;
+}
+#basicinfo-name{
+    width: 647px;
+}
+
+
+.input-user-city{
+    grid-area: city;
+}
+
+.input-user-state{
+    grid-area: state;
+}
+#basicinfo-state{
+    width: 120px;
+}
+
+
+.input-user-zipcode{
+    grid-area: zipcode;
+}
+#basicinfo-zipcode{
+    width: 120px;
+}
+
+
+.input-user-phone{
+    grid-area: phone;
+}
+
+.input-user-email{
+    grid-area: email;
+}
+
+/****************  eudcation  *****************/
+.form-education .education-block{
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+        "school school-location"
+        "degree field"
+        "edu-start edu-end"
+        ". currentedu"
+        ". edu-removebtn"
+    ;
+    gap: 20px 10px;
+
+    border-top: 2px solid var(--main-color-2);
+    padding: 30px 0 15px 0;
+}
+
+.input-user-school{
+    grid-area: school;
+}
+.input-user-school-location{
+    grid-area: school-location;
+}
+.input-user-degree{
+    grid-area: degree;
+}
+.input-user-field{
+    grid-area: field;
+}
+.input-user-edu-start{
+    grid-area: edu-start;
+}
+.input-user-edu-end{
+    grid-area: edu-end;
+}
+.input-user-currentedu{
+    grid-area: currentedu;
+}
+.education-remove-btn{
+    grid-area: edu-removebtn;
+}
+
+.form-add-block{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+
+/****************  work  *****************/
+.work-block{
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(8, auto);
+    grid-template-areas: 
+        "job employer"
+        "worklocation ."
+        "work-start work-end"
+        ". currentwork"
+        "work-description1 work-description1"
+        "work-description2 work-description2"
+        "work-description3 work-description3"
+        "use-ai work-removebtn"
+    ;
+    gap: 20px 10px;
+
+    border-top: 2px solid var(--main-color-2);
+    padding: 30px 0 15px 0;
+}
+
+.input-user-job{
+    grid-area: job;
+}
+.input-user-employer{
+    grid-area: employer;
+}
+.input-user-worklocation{
+    grid-area: worklocation;
+}
+.input-user-work-start{
+    grid-area: work-start;
+}
+.input-user-work-end{
+    grid-area: work-end;
+}
+.input-user-currentwork{
+    grid-area: currentwork;
+}
+.input-user-work-description1{
+    grid-area: work-description1;
+}
+.input-user-work-description2{
+    grid-area: work-description2;
+}
+.input-user-work-description3{
+    grid-area: work-description3;
+}
+
+.input-user-work-description input[type=text]{
+    width: 647px;
+}
+
+.input-user-work-description-use-ai{
+    grid-area: use-ai;
+}
+
+.work-remove-btn{
+    grid-area: work-removebtn;
+}
+
+.form-add-block{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+}
+
+
+/****************  projects  *****************/
+.project-block{
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(5, auto);
+    grid-template-areas: 
+        "project project-role"
+        "project-location project-link"
+        "project-start project-end"
+        "project-description1 project-description1"
+        "project-description2 project-description2"
+        "project-description3 project-description3"
+        "use-ai project-removebtn"
+    ;
+    gap: 20px 10px;
+
+    border-top: 2px solid var(--main-color-2);;
+    padding: 30px 0 15px 0;
+}
+
+.input-user-project{
+    grid-area: project;
+}
+.input-user-project-role{
+    grid-area: project-role;
+}
+.input-user-project-location{
+    grid-area: project-location;
+}
+.input-user-project-link{
+    grid-area: project-link;
+}
+.input-user-project-start{
+    grid-area: project-start;
+}
+.input-user-project-end{
+    grid-area: project-end;
+}
+.input-user-project-description1{
+    grid-area: project-description1;
+}
+.input-user-project-description2{
+    grid-area: project-description2;
+}
+.input-user-project-description3{
+    grid-area: project-description3;
+}
+
+.input-user-project-description input[type=text]{
+    width: 647px;
+}
+
+.input-user-project-description-use-ai{
+    grid-area: use-ai;
+}
+
+
+.project-remove-btn{
+    grid-area: project-removebtn;
+}
+
+.form-add-block{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+
+
+/****************  skills  *****************/
+.form-skills{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.input-user-skills textarea{
+    width: 630px;
+    color: var(--text-color);
+}
+.input-user-skills .textarea-wrapper{
+    width: 630px;
+}
+
+.skills-selection-input{
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+}
+
+#skills-select{
+    width: 370px;
+    padding: 5px 20px;
+    color: var(--text-color);
+}
+
+/****************  summary  *****************/
+.input-user-summary textarea{
+    width: 630px;
+    color: var(--text-color);
+    height: 260px;
+}
+
+.input-user-summary .textarea-wrapper{
+    width: 630px;
+}
+
+
+/********************* use ai model ****************/
+.input-user-project-description,
+.input-user-work-description,
+.input-user-skills,
+.input-user-summary{
+    position: relative;
+}
+.input-user-project-description-use-ai,
+.input-user-work-description-use-ai,
+.input-user-skills-use-ai{
+    top:195px;
+    left:530px;
+}
+.input-user-skills-use-ai{
+    position: absolute;
+    top:195px;
+    left:530px;
+}
+
+.input-user-summary-use-ai{
+    position: absolute;
+    top:270px;
+    left:530px;
+}
+
+
+/**********************************************************************/
+/********************** DescriptionAIPanel  ***************************/
+/**********************************************************************/
+
+.description-ai-panel{
+    width: 1157px;
+    height: 541px;
+    background-color: var(--main-color-2);;
+    border-radius: 24px;
+    padding: 50px 30px;
+
+    position: absolute;
+    z-index: 10;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+}
+
+.description-ai-panel-top{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.description-ai-panel-left,
+.description-ai-panel-right
+{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+}
+
+/* left */
+.description-ai-panel-left-heading{
+    color: var(--text-color);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+}
+.description-ai-panel-left-content{
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    height: 350px;
+    padding: 20px 0 20px 30px;
+    overflow: auto;
+}
+
+.description-ai-panel-right-content{
+    width: 497px;
+    height: 320px;
+    background-color: var(--main-color-2);;
+    border-radius: 24px;
+    margin-top: 40px;
+    color: var(--text-color);
+    border: none;
+    outline: none;
+    padding: 30px;
+}
+
+
+
+/* buttons */
+.description-ai-panel-bottom{
+    padding: 0 50px;
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+    justify-content: right;
+} 
+
+
+.description-ai-panel-bottom button{
+    width: 163px;
+    height: 46px;
+    padding: 0px 8px;
+    border: 0;
+    box-sizing: border-box;
+    border-radius: 24px;
+    background-color: var(--dec-color);
+    color: var(--main-color-2);
+    font-size: 20px;
+    line-height: 26px;
+    outline: none;
+}

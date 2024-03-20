@@ -1,0 +1,49 @@
+.cv-generation-page{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    /* min-height: 944px; */
+}
+
+.cv-generation-page .left-page{
+    min-width: 751px;
+}
+
+
+
+.cv-generation-page .right-page{
+    background-color: var(--main-color-1);
+    padding: 20px;
+    width: 870px;
+    
+}
+
+/* right page */
+.code-editor-btns{
+    display: flex;
+    gap: 20px;
+    
+    justify-content: right;
+    padding-bottom:20px;
+
+}
+
+.code-editor-btns button{
+    width: 174px;
+    height: 46px;
+    padding: 0px 8px;
+    border: 0;
+    box-sizing: border-box;
+    border-radius: 24px;
+    background-color: var(--dec-color);
+    color: #000000;
+    font-size: 20px;
+    line-height: 26px;
+    outline: none;
+}
+
+

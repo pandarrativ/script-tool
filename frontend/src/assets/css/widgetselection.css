@@ -1,0 +1,147 @@
+/* MUI Pagination css */
+.MuiPaginationItem-root{
+    color: var(--text-color) !important;
+} 
+
+.Mui-selected:hover{
+    background-color: var(--main-color-2) !important;
+}
+
+
+
+/* widget css */
+.widget-selection{
+    position: absolute;
+    top: 0px;
+    left: 96px;
+    height: 100%;
+    min-height: 100vh;
+    width: calc(100% - 96px);
+    font-family: var(--font-family-body);
+}
+
+.widget-selection-left{
+    height: 100vh;
+    padding: 40px 30px;
+
+
+    display: flex;
+    flex-direction: column;
+}
+
+.widget-selection-top{
+    flex-shrink: 0;
+}
+
+
+.widget-selection-heading{
+    font-size: var(--h2-size);
+    font-weight: var(--font-bold-weight);
+    line-height: var(--h2-line-height);
+
+}
+
+.widget-selection-currentsage{
+    font-size: var(--content-size-small);
+    padding-bottom: 10px;
+    width: 100%;
+    text-align: right;
+}
+
+.widget-selection-sages{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    overflow-y: auto;
+    flex-grow: 1;
+}
+
+.widget-selection-pages{
+    margin-bottom: -20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+}
+
+/***********************************************************************************************/
+/********************************************* widget info ************************************/
+.widget-info{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 20px;
+    padding: 10px;
+    height: 200px;
+    background-color: var( --main-color-1);
+
+    border-radius: 18px;
+}
+.current-sage-true{
+    background-color:  var(--main-color-2);
+}
+
+.widget-info-body{
+    padding-top: 5px;
+    display: grid;
+    flex-direction: column;
+    gap: 5px;
+    /* height: 200; */
+    overflow: auto;
+}
+
+.widget-info-body::-webkit-scrollbar {
+    width: 0px;
+  } 
+
+.widget-info-left{
+    width: 180px;
+    height: 180px;
+}
+
+.widget-info-left img{
+    border-radius: 12px;
+}
+
+
+.widget-info-name{
+    font-size: var(--h3-size);
+    font-weight: var(--font-bold-weight);
+}
+
+.widget-info-2-heading,
+.widget-info-3-heading{
+    font-size: var(--content-size);
+    font-weight: var(--font-bold-weight);
+    /* margin-bottom: 3px; */
+}
+
+.widget-info-1,
+.widget-info-2-content,
+.widget-info-3-content{
+    padding-right: 10px;
+}
+
+
+.widget-info-right{
+    display: flex;
+    align-items: flex-end;
+}
+
+
+.widget-info-btn{
+    width: 100px;
+    height: 34px;
+    padding: 0px 8px;
+    border: 0;
+    box-sizing: border-box;
+    border-radius: 24px;
+    outline: none;
+    background-color: var(--main-color-3);
+}
+
+.current-sage-true .widget-info-btn{
+    visibility: hidden;
+}

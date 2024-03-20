@@ -1,0 +1,16 @@
+
+create this file "simulife_backend_gunicorn.service" under "/etc/systemd/system/"
+
+
+[Unit]
+Description=Gunicorn instance to serve your_project_name
+After=network.target
+
+[Service]
+User=ubuntu
+Group=your_group
+WorkingDirectory=/var/www/Simulife/backend/backend
+ExecStart=/usr/local/bin/gunicorn -c /var/www/Simulife/backend/backend/gunicorn_config.py your_project_name.wsgi:application
+
+[Install]
+WantedBy=multi-user.target

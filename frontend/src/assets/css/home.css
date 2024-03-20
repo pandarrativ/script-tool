@@ -1,0 +1,195 @@
+.home{
+    position: absolute;
+    top: 0px;
+    left: 96px;
+    height: 100%;
+    min-height: 100vh;
+    width: calc(100% - 96px);
+    font-family: var(--font-family-body);
+
+
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    /* min-height: 710px; */
+
+}
+
+.home-left-page{
+    width: 50%;
+    height: 100%;
+    padding: 40px 30px;
+
+}
+
+.home-right-page{
+    width: 50%;
+    height: 100%;
+    background-color: var(--main-color-2);
+}
+
+
+/* text */
+.home-left-heading{
+    font-size: var(--h2-size);
+    font-weight: var(--font-bold-weight);
+    line-height: var(--h2-line-height);
+}
+
+.home-form-heading{
+    color: var(--text-color);
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 39px;
+    margin: 20px 0 10px 0;
+}
+
+.home-form-label{
+    color: #fff;
+    font-size: 20px;
+    line-height: 31px;
+    text-align: center;
+}
+
+.home-form-btn{
+    width: 131px;
+    height: 43px;
+    padding: 0px 8px;
+    border: 0;
+    box-sizing: border-box;
+    border-radius: 24px;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 16px;
+    line-height: 20px;
+    outline: none;
+    margin-top: 20px;
+}
+
+.home-cv-info{
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.home-cv-time{
+    color: var(--text-color);
+    font-size: 16px;
+    line-height: 20px;
+}
+
+
+
+/* grid */
+.home-left-page{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 30px;
+    min-width: 710px;
+}
+
+
+
+
+/* home body */
+.home-left-body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    overflow: auto;
+}
+
+.home-cv-block{
+    width: 100%;
+    height: 76px;
+    background-color: var(--main-color-1);
+    border-radius: 24px;
+    padding: 20px;
+
+    display: grid;
+    grid-template-columns: auto auto 1fr auto;
+    gap: 10px;
+    align-items: center;
+}
+
+.home-cv-btn{
+    width: 75px;
+    height: 40px;
+    padding: 0px 8px;
+    border: 0;
+    box-sizing: border-box;
+    border-radius: 24px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-size: 16px;
+    line-height: 20px;
+    outline: none;
+}
+
+
+/* home bottom */
+.home-left-bottom{
+    width: 100%;
+    padding: 0 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.home-bottom-block{
+    width: 45%;
+    height: 341px;
+    background-color: var(--main-color-2);
+    border-radius: 24px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.home-form-body{
+    width: 221px;
+    height: 248px;
+    background-color: var(--dec-color);
+    border-radius: 24px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 30px 0;
+}
+
+.home-form-label{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+}
+.home-create-cv .home-form-label{
+
+    gap:5px;
+}
+
+.home-create-cv button{
+    border: none;
+}
+
+.home-form-label:hover,
+.home-form-label:focus{
+    cursor: pointer;
+}
+
+.home-create-cv .home-form-btn{
+    padding: 11px;
+}
+
+.cv-upload{
+    display: none;
+}
